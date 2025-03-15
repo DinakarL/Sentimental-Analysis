@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="feedbackForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="registerNumber" placeholder="Register Number" required>
+        <input type="text" id="department" placeholder="Department" required>
+        <textarea id="feedbackText" placeholder="Enter your feedback" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <button onclick="fetchResults()">Show Results</button>
+    <div id="result"></div>
+</body>
+<script src="script.js"></script>
+</html>
