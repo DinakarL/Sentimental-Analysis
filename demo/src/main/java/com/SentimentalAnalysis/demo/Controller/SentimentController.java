@@ -16,7 +16,7 @@ public class SentimentController {
 	private SentimentService sentimentService;
 	
 	@GetMapping("/showresult")
-    public SentimentResult getSentimentResult() {
+    public String getSentimentResult() {
         return sentimentService.getSentimentResults();
     }
 }

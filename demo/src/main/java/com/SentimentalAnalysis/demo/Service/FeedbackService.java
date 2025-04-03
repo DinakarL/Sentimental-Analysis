@@ -16,10 +16,10 @@ public class FeedbackService {
 	private FeedbackRepository feedbackRepository;
 	
 	private static final LocalDateTime startTime = LocalDateTime.now();
-    private static final long ALLOWED_HOURS = 5;
+    private static final long ALLOWED_HOURS = 15;
     
     public boolean isFeedbackAllowed() {
-        return LocalDateTime.now().isBefore(startTime.plusHours(ALLOWED_HOURS));
+        return LocalDateTime.now().isBefore(startTime.plusMinutes(ALLOWED_HOURS));
     }
     
     public String saveFeedback(Feedback feedback) {
